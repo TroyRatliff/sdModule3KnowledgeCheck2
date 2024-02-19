@@ -3,6 +3,8 @@ FROM Orders
 INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 WHERE Orders.OrderID = 10310;
 
+-- The Big Cheese 
+
 UNION
 
 SELECT Suppliers.Address
@@ -12,3 +14,4 @@ WHERE Suppliers.SupplierID = (
     FROM Products
     WHERE Products.ProductID = 40
 );
+-- Order Processing Dept. 2100 Paul Revere Blvd.
